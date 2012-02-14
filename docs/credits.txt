@@ -1,0 +1,23 @@
+
+xv.png by Lasma (http://www.oddfur.com/cv/)
+ license: http://creativecommons.org/licenses/by/3.0/
+
+favicon by Kjell Winblad (@kjellwinblad)
+ license: CC 3.0
+
+button style and gradients: Twitter Bootstrap (http://twitter.github.com/bootstrap/)
+ license: http://www.apache.org/licenses/LICENSE-2.0
+
+dice icon: by www.fatcow.com
+ license: http://creativecommons.org/licenses/by/3.0/us/
+
+iconic set by by P.J. Onori (http://somerandomdude.com/work/iconic/)
+ license: http://creativecommons.org/licenses/by-sa/3.0/us/
+
+hair texture: http://www.commentnation.com/background.php?MyFile=dark_blue_faux_fur_seamless_background_texture_pattern.php&ID=C96.php
+
+old_wall texture: Bartosz Kaszubowski (@simek)
+ license: http://creativecommons.org/licenses/by/3.0/
+
+LCD font: http://fontsforweb.com/font/show?id=523
+

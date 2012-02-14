@@ -1,0 +1,364 @@
+/*
+ * Basic CSS Reset from YUI 3.4.1 (build 4118)
+ * Copyright 2011 Yahoo! Inc. All rights reserved.
+ * Licensed under the BSD License.
+ * http://yuilibrary.com/license/
+ */
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+
+/* LIFE css starts here */
+
+html {
+  background: url('../images/xv.png') repeat scroll 0 0 transparent;
+}
+
+body {
+  font-size: 13px;
+  font-family: 'NobileRegular', sans-serif;
+  margin: .5em;
+}
+
+@font-face { 
+  font-family: "LCDBOLD";
+  src: url('http://fontsforweb.com/public/fonts/523/LCDBOLD.eot');
+  src: local("LCD Bold"), url('http://fontsforweb.com/public/fonts/523/LCDBOLD.ttf') format("truetype");
+}
+
+
+#dashboard {
+  float: left;
+}
+
+#catalog {
+  position: fixed;
+  right: 10px;
+}
+
+
+/* Current planet */
+
+#world {
+  padding: .5em;
+}
+
+#world > * {
+  background-color: white;
+  border: 2px solid #444;
+}
+
+#world table, #world canvas {
+  width: 960px;
+  height: 400px;
+}
+
+#world table {
+  border-collapse: collapse;
+}
+
+canvas.wakawaka {
+  background: url('../images/hair.jpg') repeat scroll 0 0 transparent;
+}
+
+canvas.rainbow {
+  background: url('../images/old_wall.png') repeat scroll 0 0 transparent;
+}
+
+#world pre {
+  background-image:-moz-linear-gradient(center top, #F0F0F0, #FFFFFF 60%, #F0F0F0);
+  float: left;
+  font-size: 24px;
+  line-height: 0.5;
+}
+
+#world td {
+  border: 1px solid #eee;
+}
+
+#world td.live {
+  background-color: black;
+}
+
+
+/* Dashboard */
+
+#dashboard li {
+  list-style-type: none;
+  float: left;
+  margin: 3px 4px;
+}
+
+li.dashboard-new-pop {
+  clear: left;
+}
+
+button, select {
+  vertical-align: baseline;
+}
+
+button {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  -moz-transition: all 0.1s linear 0s;
+  background-color: #E6E6E6;
+  background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 25%, #E6E6E6);
+  background-repeat: no-repeat;
+  border-color :#CCCCCC #CCCCCC #BBBBBB;
+  border-radius: 4px 4px 4px 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  line-height: normal;
+  padding: 5px 6px 6px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+button:hover {
+  background-position: 0 -15px;
+}
+
+button img {
+  vertical-align: middle;
+}
+
+button#play, button#pause {
+  color: white;
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+button#play {
+  background-color: #57A957;
+  background-image: -moz-linear-gradient(center top , #62C462, #57A957);
+}
+
+button#pause {
+  background-color: #339BB9;
+  background-image: -moz-linear-gradient(center top , #5BC0DE, #339BB9);
+}
+
+button#play, button#pause {
+  width: 75px;
+  padding: 4px 0px 5px 4px;
+}
+
+button#play img {
+  margin-left: -16px;
+  margin-right: 2px;
+}
+
+button#pause img {
+  margin-left: -6px;
+  margin-right: 3px;
+}
+
+button#new-population img {
+  width: 16px;
+  height: 16px;
+}
+
+a#bookmark {
+  display: inline-block;
+  background: url(../images/star_empty.png) top left no-repeat;
+  text-align: center;
+  line-height: 24px;
+  width: 24px;
+  text-decoration: none;
+}
+
+a#bookmark:hover {
+  background: url(../images/star_full.png) top left no-repeat;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+.population-stats {
+  font-size: 32px;
+}
+
+#counter {
+  font-family: "LCDBOLD";
+}
+
+#counter.nosurvivors {
+  color: red;
+}
+
+.ruleset-description {
+  font-size: 18px;
+  font-family: 'Convergence', sans-serif;
+}
+
+
+
+/* Tabber */
+
+
+.tabber .header a {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  -moz-transition: all 0.1s linear 0s;
+  background-color: #E6E6E6;
+  background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 25%, #E6E6E6);
+  background-repeat: no-repeat;
+  border-color :#CCCCCC #CCCCCC #BBBBBB;
+  border-radius: 4px 4px 4px 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  line-height: normal;
+  padding: 5px 6px 6px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+.tabber .header a.active {
+  font-weight: bold;
+}
+
+
+
+/* Catalog */
+
+
+
+#catalog li {
+  list-style-type: none;
+}
+
+
+
+
+
+
+
+.preview-container, .creature-container {
+  background-color: #eeeeee;
+  border-color: #cccccc #cccccc #bbbbbb;
+  border-style: solid;
+  border-width: 1px;
+  padding: 3px 0px;
+}
+
+
+
+/* Most popular */
+
+li.creature-container {
+  float: right;
+  clear: right;
+  width: 180px;
+}
+
+.creature-description {
+  padding: 3px;
+}
+
+.creature-preview {
+  margin: 3px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  float: left;
+}
+
+.creature-preview canvas {
+  float: right;
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.creature-preview:hover {
+  border: 2px solid black;
+  border-radius: 4px 4px 4px 4px;
+  background-color: #BFE7BF;
+}
+
+.creature-name,
+.creature-type {
+  display: block;
+}
+
+.creature-name,
+.creature-name:visited {
+  color: #0000aa;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.creature-type:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.creature-name:hover {
+  text-decoration: underline;
+}
+
+.creature-type {
+  font-size: 80%;
+  font-style: italic;
+  float: right;
+}
+
+
+
+/* Favorites */
+
+#favorites-container {
+}
+
+#favorites-container canvas {
+  width: 150px;
+}
+
+
+
+.reload {
+    background: url(../images/gray_light_spin.png) no-repeat scroll left top transparent;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    width: 24px;
+    display: inline-block;
+    float: left;
+    margin-left: 0;
+    margin-right: 6px;
+}
+
+.reload:hover {
+  background-image: url(../images/black_spin.png);
+}
+
+.preview-container {
+  padding: 5px 6px 6px;
+}
+
+.preview-container canvas {
+  border: 2px solid #ccc;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.preview-container:hover canvas {
+  background-color:#EEDC94;
+  background-image:-moz-linear-gradient(center top , #FCEEC1, #EEDC94);
+  color:#404040;
+}
+
+

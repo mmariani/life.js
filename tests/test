@@ -1,0 +1,4 @@
+#!/bin/sh
+
+d8 --debugger shoulda.js/shoulda.js global.js ../js/population.js test_population.js
+

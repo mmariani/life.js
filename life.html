@@ -1,0 +1,87 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Life</title>
+  <link type="text/css" rel="stylesheet" href="css/life.css" />
+  <link rel="shortcut icon" href="images/favicon_animated.ico" /> <!-- static for IE -->
+  <link href='http://fonts.googleapis.com/css?family=Convergence' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Nova+Mono' rel='stylesheet' type='text/css' />
+</head>
+<body>
+  <div id="dashboard">
+    <ul>
+      <li class="dashboard-ruleset">
+        <label>Rule set</label>
+        <select id="rulesets" disabled="disabled">
+          <option value="b3_s23">Conway's (B3/S23)</option>
+        </select>
+      </li>
+      <li class="dashboard-planet">
+        <label>Planet</label>
+        <select id="planet">
+          <option value="ansi" selected="selected">ANSI X3.4</option>
+          <option value="crosswords">Crosswords</option>
+          <option value="rainbow">Rainbow</option>
+          <option value="wakawaka">Waka Waka</option>
+        </select>
+      </li>
+      <li class="dashboard-new-pop">
+        <button id="new-population">
+          <img src="images/dice.png" alt="" />
+          Random
+        </button>
+      </li>
+      <li class="dashboard-next">
+        <button id="next">
+          <img src="images/curved_arrow.png" alt="" />
+          Next
+        </button>
+      </li>
+      <li class="dashboard-play">
+        <button id="play">
+          <img src="images/play.png" alt="" />
+          Play
+        </button>
+        <button id="pause" style="display:none">
+          <img src="images/pause.png" alt="" />
+          Pause
+        </button>
+      </li>
+      <li class="dashboard-bookmark">
+        <a href="#" id="bookmark" title="Save as favorite">&nbsp;</a>
+      </li>
+    </ul>
+
+    <span class="clearfix" />
+
+    <div id="world"></div>
+
+    <p class="population-stats">
+      Population: <span id="counter"></span>.
+    </p>
+
+  </div>
+
+  <div class="tabber" id="catalog">
+    <div class="header">
+      <a href="#">Most popular</a>
+      <a href="#">Favorites</a>
+    </div>
+    <div class="tabs">
+      <ul id="popular-container">
+      </ul>
+      <ul id="favorites-container">
+      </ul>
+    </ul>
+  </div>
+
+  <script src="js/life.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/population.js"></script>
+  <script src="js/planets.js"></script>
+  <script src="js/rulesets.js"></script>
+  <script src="js/popular.js"></script>
+  <script src="js/favorites.js"></script>
+
+</body>
+</html>
